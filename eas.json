@@ -1,0 +1,35 @@
+{
+  "cli": {
+    "version": ">= 3.4.1"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal", // The development profile defaults to "distribution": "internal". This will make it easy to distribute our app directly to physical iOS and Android devices
+      "android": {
+        "gradleCommand": ":app:assembleDebug" // generates an APK rather than .aab
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      }
+    },
+    "preview": {
+      "extends": "production",
+      "distribution": "internal",
+      "ios": {
+        "simulator": true // this allows me to install the app in a iOS simulator after build
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "node": "18.13.0",
+      "ios": {
+        "resourceClass": "m1-medium"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
