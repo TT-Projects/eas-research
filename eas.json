@@ -20,7 +20,8 @@
       },
       "android": {
         "buildType": "apk"
-      }
+      },
+      "prebuildCommand": "prebuild --npm"
     },
     "production": {
       "node": "18.13.0",
