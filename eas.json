@@ -20,14 +20,14 @@
       },
       "android": {
         "buildType": "apk"
-      },
-      "prebuildCommand": "prebuild --npm"
+      }
     },
     "production": {
       "node": "18.13.0",
       "ios": {
         "resourceClass": "m1-medium"
-      }
+      },
+      "prebuildCommand": "prebuild --npm"
     }
   },
   "submit": {
