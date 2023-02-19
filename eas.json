@@ -4,28 +4,36 @@
   },
   "build": {
     "development": {
-      "distribution": "internal", // The development profile defaults to "distribution": "internal". This will make it easy to distribute our app directly to physical iOS and Android devices
-      "android": {
-        "gradleCommand": ":app:assembleDebug" // generates an APK rather than .aab
-      },
+      "extends": "production",
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {},
       "ios": {
-        "buildConfiguration": "Debug"
+        "enterpriseProvisioning": "universal"
       }
     },
     "preview": {
       "extends": "production",
+      "developmentClient": true,
       "distribution": "internal",
       "ios": {
-        "simulator": true // this allows me to install the app in a iOS simulator after build
+        "simulator": true,
+        "buildConfiguration": "Debug"
       },
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "API_URL": "https://api.staging.com"
       }
     },
     "production": {
       "node": "18.13.0",
       "ios": {
         "resourceClass": "m1-medium"
+      },
+      "env": {
+        "API_URL": "https://api.production.com"
       }
     }
   },
