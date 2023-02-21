@@ -24,10 +24,5 @@ jobs:
         run: npm ci
       - name: Build on EAS
         run: eas build --platform ios
-  submit:
-    name: EAS submit
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Submit to stores
         run: eas submit --platform ios
