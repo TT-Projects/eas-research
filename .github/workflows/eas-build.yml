@@ -25,4 +25,4 @@ jobs:
       - name: Build on EAS
         run: eas build --platform ios
       - name: Submit to stores
-        run: eas submit --platform ios
+        run: eas submit --platform ios --non-interactive
