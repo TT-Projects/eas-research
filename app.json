@@ -1,5 +1,8 @@
 {
   "name": "EASResearch",
+  "expo": {
+    "owner": "tynery"
+  },
   "displayName": "EASResearch",
   "extra": {
     "eas": {
