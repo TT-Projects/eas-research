@@ -22,18 +22,16 @@
       },
       "android": {
         "buildType": "apk"
-      },
-      "env": {
-        "API_URL": "https://api.staging.com"
       }
     },
     "production": {
       "node": "18.13.0",
       "ios": {
-        "resourceClass": "m1-medium"
+        "resourceClass": "m1-medium",
+        "autoIncrement": true
       },
-      "env": {
-        "API_URL": "https://api.production.com"
+      "android": {
+        "autoIncrement": true
       }
     }
   },
