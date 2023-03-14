@@ -2,9 +2,31 @@
   "name": "EASResearch",
   "expo": {
     "owner": "tynery",
+    "name": "EASResearch",
+    "slug": "EASResearch",
+    "orientation": "portrait",
+    "scheme": "easresearch",
+    "icon": "./assets/images/icon.png",
     "extra": {
       "eas": {
         "projectId": "19b5db8b-21b4-4492-8ab3-8d044e202e20"
+      }
+    },
+    "splash": {
+      "backgroundColor": "#000000",
+      "resizeMode": "contain",
+      "image": "./assets/images/splash.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#000000"
       }
     }
   },
