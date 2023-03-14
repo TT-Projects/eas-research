@@ -2,8 +2,8 @@
   "name": "EASResearch",
   "expo": {
     "owner": "tynery",
-    "name": "EASResearch",
-    "slug": "EASResearch",
+    "name": "easresearch",
+    "slug": "easresearch",
     "orientation": "portrait",
     "scheme": "easresearch",
     "icon": "./assets/images/icon.png",
